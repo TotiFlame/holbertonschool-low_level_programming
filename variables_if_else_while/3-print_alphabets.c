@@ -19,7 +19,6 @@ int main(void)
 	{
 	putchar(alp);
 	}
-	
 	for (alpu = 'A' ; alpu <= 'Z' ; alpu++)
 	{
 	putchar(alpu);
