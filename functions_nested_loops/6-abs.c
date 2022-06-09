@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-*
 * _abs - print the absolute value of an integer
+*
 * @n: character
+*
 * Return: Always 1
 *
 */
@@ -14,8 +15,8 @@ int _abs(int n)
 
 	if (n < 0)
 	{
-		ab = -1*n
-		_putchar('-1*n');
+		ab = -1 * n;
+		_putchar(ab);
 	}
 	else
 	{
