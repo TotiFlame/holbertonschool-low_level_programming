@@ -10,9 +10,12 @@
 
 int _abs(int n)
 {
+	int ab;
+
 	if (n < 0)
 	{
-		_putchar(-1*n);
+		ab = -1*n
+		_putchar('-1*n');
 	}
 	else
 	{
