@@ -5,7 +5,7 @@
 *
 * @c: character
 *
-* return: 0 or 1.
+* Return: always 1.
 */
 
 int _islower(int c)
