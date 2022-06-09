@@ -11,17 +11,8 @@
 
 int _abs(int n)
 {
-	int ab;
-
 	if (n < 0)
-	{
-		ab = -1 * n;
-		_putchar(ab);
-	}
+		return (-1 * n);
 	else
-	{
-		_putchar(n);
-	}
-
-return (0);
+		return(n);
 }
