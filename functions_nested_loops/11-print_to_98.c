@@ -4,7 +4,7 @@
 /**
 * print_to_98 - print all numbers from n to 98
 * @n: number
-* @f: for number
+*
 * Return: void
 */
 
