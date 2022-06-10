@@ -33,7 +33,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (f = n; f <= 98; f--)
+		for (f = n; f >= 98; f--)
 			if (f != 98)
 			{
 				printf ("%d, ", f);
