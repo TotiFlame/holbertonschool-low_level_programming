@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
+* print_square - draws a square in the terminal
+* @size: number
 *
-*
-*
-*
+* Return: void
 */
 
 void print_square(int size)
