@@ -30,7 +30,10 @@ void print_triangle(int size)
 						_putchar('#');
 					}
 				}
-				_putchar(' ');
+				if (j != size)
+				{
+				 _putchar(' ');
+				}
 			}
 		_putchar('\n');
 		}
