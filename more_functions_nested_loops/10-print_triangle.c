@@ -32,7 +32,7 @@ void print_triangle(int size)
 				}
 				if (j != size)
 				{
-				 _putchar(' ');
+					_putchar(' ');
 				}
 			}
 		_putchar('\n');
