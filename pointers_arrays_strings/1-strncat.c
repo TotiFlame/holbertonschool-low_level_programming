@@ -19,12 +19,11 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (scon = 0; scon < n; scon++)
 	{
-		if(src[0] != '\0')
+		if (src[0] != '\0')
 		{
 			dest[dlen] = src[scon];
 			dlen++;
 		}
 	}
-
 	return (dest);
 }
