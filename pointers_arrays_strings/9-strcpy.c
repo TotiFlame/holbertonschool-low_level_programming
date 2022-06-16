@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
 * _strcpy - copies the pointed to by src to the buffer pointed to by dest
@@ -14,7 +14,13 @@ char *_strcpy(char *dest, char *src)
 	int j;
 
 	for (i = 0, j = 0; src[i] != '\0'; i++, j++)
+	{
 		dest[j] = src[i];
+	}
+
+	dest[j] = 0;
+
+	
 
 	return (dest);
 }
