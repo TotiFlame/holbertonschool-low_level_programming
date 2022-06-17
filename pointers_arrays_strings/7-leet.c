@@ -2,23 +2,25 @@
 
 /**
 * leet - encodes a string into 1337
-* @epslc: char pointer
+* @str: char pointer
 * Return: char
 */
 
 char *leet(char *str)
 {
 	int cont;
+	int scont;
+	char let[] = 'aAeEoOtTlL';
+	int num[] = '4433007711';
 
-	for (cont = 0; str[cont]; cont ++)
+	for (cont = 0; str[cont]; cont++)
 	{
-		if (str[cont] == 97 || str[cont] == 65)
+		for (scont = 0; let[scont]; scont++)
 		{
-			str[cont] = 52;
-		}
-		else if (str[cont] == 101 || str[cont] == 69)
-		{
-			str[cont] = 51;
+			if (str[cont] == let[scont])
+			{
+				str[cont] = num[scont];
+			}
 		}
 	}
 	return (str);
