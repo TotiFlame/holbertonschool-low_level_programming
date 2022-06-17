@@ -11,7 +11,7 @@ char *leet(char *str)
 	int cont;
 	int scont;
 	char let[] = "aAeEoOtTlL";
-	int num[] = "4433007711";
+	int num[] = '4433007711';
 
 	for (cont = 0; str[cont]; cont++)
 	{
