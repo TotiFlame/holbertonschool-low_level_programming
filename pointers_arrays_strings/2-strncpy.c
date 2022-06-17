@@ -4,6 +4,7 @@
 * _strncpy - copies a string
 * @dest: pointer
 * @src: pointer
+* @n: int
 * Return: dest
 */
 
