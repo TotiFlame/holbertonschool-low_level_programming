@@ -1,18 +1,19 @@
-#include "main.h"
 #include <stdio.h>
 
-/**
-* main - check the code
-*
-* Return: Always 0.
-*/
-int main(void)
-{
-	char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
-	char *ptr;
+char *cap_string(char *);
 
-	ptr = cap_string(str);
-	printf("%s", ptr);
-	printf("%s", str);
-	return (0);
-}
+/**
+ * main - check the code for Holberton School students.
+  *
+   * Return: Always 0.
+    */
+	int main(void)
+	{
+			char s[] = "hello world! expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+				char *p;
+
+					p = cap_string(s);
+						printf("%s", p);
+							printf("%s", s);
+								return (0);
+	}

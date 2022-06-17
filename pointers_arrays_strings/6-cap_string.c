@@ -12,7 +12,7 @@ char *cap_string(char *s)
 
 	for (cont = 0; s[cont]; cont++)
 	{
-		if (s[cont] == 0 && s[cont] != '\0' && s[cont] >= 97 && s[cont] <= 122)
+		if (cont == 0 && s[cont] != '\0' && s[cont] >= 97 && s[cont] <= 122)
 		{
 			s[0] -= 32;
 		}
