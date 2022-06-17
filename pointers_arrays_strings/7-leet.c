@@ -10,8 +10,8 @@ char *leet(char *str)
 {
 	int cont;
 	int scont;
-	int let[] = "aAeEoOtTlL";
-	int num[] = "4433007711";
+	char let[] = "aAeEoOtTlL";
+	char num[] = "4433007711";
 
 	for (cont = 0; str[cont]; cont++)
 	{
