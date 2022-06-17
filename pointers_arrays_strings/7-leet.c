@@ -21,4 +21,5 @@ char *leet(char *str)
 			str[cont] = 51;
 		}
 	}
+	return (str);
 }
