@@ -15,11 +15,8 @@ char *_strchr(char *s, char c)
 	{
 		if (s[loc] == c)
 		{
-			return (s);
+			return (s[loc]);
 		}
 	}
-	if (s[loc] == '\0')
-	{
-		return (NULL);
-	}
+	return ('\0');
 }
