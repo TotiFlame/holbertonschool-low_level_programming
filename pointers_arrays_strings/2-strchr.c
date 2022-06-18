@@ -11,6 +11,10 @@ char *_strchr(char *s, char c)
 {
 	int loc;
 
+	if (c == '\0')
+	{
+		return (' ');
+	}
 	for (loc = 0; s[loc]; loc++)
 	{
 		if (s[loc] == c)
