@@ -14,14 +14,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 	if (n <= 16)
 	{
-		for (cont = 0, n--; cont <= n && s[cont]; cont++)
-		{
-			s[cont] = b;
-		}
-	}
-	else
-	{
-		for (cont = 0; cont <= n && s[cont]; cont++)
+		for (cont = 0; cont < n && s[cont]; cont++)
 		{
 			s[cont] = b;
 		}
