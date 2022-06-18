@@ -17,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 		for (acont = 0; accept[acont]; acont++)
 		{
 			if (s[scont] == accept[acont])
-				return (&s[scont])
+				return (&s[scont]);
 		}
 	}
 	return ('\0');
