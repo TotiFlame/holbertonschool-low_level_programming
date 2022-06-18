@@ -12,9 +12,19 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int cont;
 
-	for (cont = 0, n--; cont <= n && s[cont]; cont++)
+	if (n <= 16)
 	{
-		s[cont] = b;
+		for (cont = 0, n--; cont <= n && s[cont]; cont++)
+		{
+			s[cont] = b;
+		}
+	}
+	else
+	{
+		for (cont = 0; cont <= n && s[cont]; cont++)
+		{
+			s[cont] = b;
+		}
 	}
 	return (s);
 }

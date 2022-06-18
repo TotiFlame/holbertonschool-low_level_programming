@@ -38,11 +38,11 @@ char *_memset(char *, char, unsigned int);
 						unsigned int len;
 							unsigned int offset;
 
-								len = 33;
+								len = 20;
 									simple_print_buffer(buffer, len);
 										printf("-------------------------------------------------\n");
 											offset = 0;
-												p = _memset(buffer + offset, 0x20, 16);
+												p = _memset(buffer + offset, 0x20, len);
 													simple_print_buffer(buffer, len);
 														printf("-------------------------------------------------\n");
 															simple_print_buffer(p, len - offset);
