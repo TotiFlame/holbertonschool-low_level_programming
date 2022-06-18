@@ -12,7 +12,7 @@ char *_strpbrk(char *s, char *accept)
 	int scont;
 	int acont;
 
-	for (scon = 0; s[scon]; scon++)
+	for (scont = 0; s[scont]; scont++)
 	{
 		for (acont = 0; accept[acont]; acont++)
 		{
