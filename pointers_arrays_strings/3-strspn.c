@@ -1,24 +1,26 @@
 #include "main.h"
 
 /**
-*
-*
-*
-*
+* _strspn - gets the length of a prefix substring
+* @s: char pointer 
+* @accept: char pointer
+* Return: unsigned int
 */
 
 unsigned int _strspn(char *s, char *accept)
 {
 	int scont;
 	int acont;
-	int cant;
+	//int cant;
 	unsigned int res = 0;
 
-	for (cant = 0; accept[cant] != '\0'; cant++)
-	{
-	}
+	/**
+	*for (cant = 0; accept[cant] != '\0'; cant++)
+	*{
+	*}
+	*/
 
-	for (scont = 0; scont < cant; scont++)
+	for (scont = 0; scont <= 5; scont++)
 	{
 		for (acont = 0; accept[acont]; acont++)
 		{
