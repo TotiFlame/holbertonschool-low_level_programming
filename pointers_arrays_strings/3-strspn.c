@@ -2,7 +2,7 @@
 
 /**
 * _strspn - gets the length of a prefix substring
-* @s: char pointer 
+* @s: char pointer
 * @accept: char pointer
 * Return: unsigned int
 */
@@ -17,7 +17,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (acont = 0; accept[acont]; acont++)
 		{
-			if (s[scont] == accept [acont])
+			if (s[scont] == accept[acont])
 			{
 				res++;
 			}
