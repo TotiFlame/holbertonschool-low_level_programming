@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 	int scont;
 	int acont;
 	int cant;
-	unsigned int res;
+	unsigned int res = 0;
 
 	for (cant = 0; accept[cant] != '\0'; cant++)
 	{
