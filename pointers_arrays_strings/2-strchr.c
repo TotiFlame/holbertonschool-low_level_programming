@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
 			return (&s[loc]);
 		}
 	}
-	if (s[loc] == '\0')
+	if (c == '\0' && s[loc] == '\0')
 	{
 		return (&s[loc]);
 	}
