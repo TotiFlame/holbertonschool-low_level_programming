@@ -15,6 +15,10 @@ char *_strstr(char *haystack, char *needle)
 	int ncont = 0;
 	int res = 0;
 
+	if (needle[0] == '\0')
+	{
+		return ('\0');
+	}
 	while (needle[cantn] != '\0')
 	{
 		cantn++;
@@ -31,19 +35,14 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (haystack[hcont] == needle[ncont])
 				{
-					hcont++, ncont++;
-					res++;
+					hcont++, ncont++, res++;
 				}
 				else
 				{
-					hcont++;
-					ncont = 0;
-					res = 0;
+					hcont++, ncont = 0, res = 0;
 				}
 				if (res == cantn)
-				{
 					return (&haystack[hcont - res]);
-				}
 			}
 		}
 		hcont++;
