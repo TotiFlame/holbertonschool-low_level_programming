@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 
 	while (haystack[hcont])
 	{
-		if (haystack[hcont] == needle[ncont] && haystack[hcont] != '\0')
+		if (haystack[hcont] == needle[ncont])
 		{
 			contr = 1;
 			while (contr <= cantn - 1)
