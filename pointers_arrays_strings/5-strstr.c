@@ -9,7 +9,11 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int cantn = 0, int canth = 0, int hcont = 0, int ncont = 0, int res = 0;
+	int cantn = 0;
+	int canth = 0;
+	int hcont = 0;
+	int ncont = 0;
+	int res = 0;
 
 	while (needle[cantn] != '\0')
 	{
@@ -27,8 +31,7 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (haystack[hcont] == needle[ncont])
 				{
-					hcont++;
-					ncont++;
+					hcont++, ncont++;
 					res++;
 				}
 				else
