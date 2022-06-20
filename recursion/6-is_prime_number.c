@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+* prime - return 1 if the number is prime
+* @p: integer
+* @i: integer
+* Return: int
+*/
+
 int prime(int p, int i)
 {
 
@@ -23,6 +30,12 @@ int prime(int p, int i)
 		return (1);
 	}
 }
+
+/**
+* is_prime_number - call function prime
+* @n: integer
+* Return: int
+*/
 
 int is_prime_number(int n)
 {
