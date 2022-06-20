@@ -2,7 +2,6 @@
 
 /**
 * iterador - returns the natural square root of a number
-* _sqrt_recursion - natural square root of a number
 * @n: integer
 * @i: integer
 * Return: int
@@ -28,6 +27,12 @@ int iterador(int n, int i)
 	else
 		return (-1);
 }
+
+/**
+* _sqrt_recursion - natural square root of a number
+* @n: integer
+* Return: int
+*/
 
 int _sqrt_recursion(int n)
 {
