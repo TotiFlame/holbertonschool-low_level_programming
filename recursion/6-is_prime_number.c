@@ -15,7 +15,7 @@ int prime(int p, int i)
 		}
 		else
 		{
-			return(prime(p, i + 1));
+			return (prime(p, i + 1));
 		}
 	}
 	else if (p % 1 == 0 && p % p == 0)
@@ -26,5 +26,5 @@ int prime(int p, int i)
 
 int is_prime_number(int n)
 {
-	return(prime(n, 2));
+	return (prime(n, 2));
 }
