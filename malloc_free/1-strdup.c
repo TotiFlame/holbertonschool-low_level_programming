@@ -13,8 +13,8 @@ char *_strdup(char *str)
 	char *dup;
 	int it;
 
-	if (*str == '\0')
-		return (NULL);
+	if (str == NULL)
+		return ('\0');
 
 	while (str[cont])
 		cont++;
