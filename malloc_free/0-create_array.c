@@ -12,7 +12,6 @@ char *create_array(unsigned int size, char c)
 {
 	char *str;
 	unsigned int cont;
-	char value;
 
 	if (size == 0)
 		return ('\0');
