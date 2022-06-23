@@ -33,18 +33,14 @@ char *str_concat(char *s1, char *s2)
 	if (conc == NULL)
 		return ('\0');
 
-	for (res = 0; s1[res] ; res++)
+	for (res = 0; s1 && s1[res] ; res++)
 		conc[res] = s1[res];
 	
-	for (i = 0; s2[i]; res++, i++)
-		conc[res] = s2[i];
-	
+	for (i = 0; s2 && res < lenght; res++, i++)
+		conc[res] = s2[i];	
+
 	if (conc)
-	{
 		return (conc);
-	}
-	else
-	{
-		return (NULL);
-	}
+
+	return ('\0');
 }
