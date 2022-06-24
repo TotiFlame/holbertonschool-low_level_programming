@@ -21,11 +21,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 != NULL && s2 == NULL)
 		lenght = strlen(s1);
 	else if (s1 == NULL && s2 != NULL)
-		lenght = n + 1;
+		lenght = n;
 	else if (s1 != NULL && s2 != NULL)
 		lenght = (strlen(s1) + n);
 
-	conc = malloc(lenght * sizeof(char));
+	conc = malloc(lenght * sizeof(char) + 1);
 	if (conc == NULL)
 		return ('\0');
 
