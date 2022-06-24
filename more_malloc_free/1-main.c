@@ -4,7 +4,7 @@
 char *string_nconcat(char *, char *, unsigned int);
 
 /**
- * main - check the code .
+ * main - check the code
   *
    * Return: Always 0.
     */
@@ -12,7 +12,7 @@ char *string_nconcat(char *, char *, unsigned int);
 	{
 			char *s;
 
-				s = string_nconcat("", "Hello", 12);
+				s = string_nconcat("Best ", "School", 4);
 					if (s == NULL)
 							{
 										printf("failed\n");
