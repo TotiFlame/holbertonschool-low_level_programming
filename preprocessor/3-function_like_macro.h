@@ -1,3 +1,4 @@
-#ifndef ABS
-#define ABS(n) ((n) > (-1) ? (n) : (n * -1))
+#ifndef MAIN_H
+#define MAIN_H
+#define ABS(n) ((n) < 0 ? -(n) : (n))
 #endif
