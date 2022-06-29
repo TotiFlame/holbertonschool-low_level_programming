@@ -2,7 +2,7 @@
 #include <stddef.h>
 void print_name(char *name, void (*f)(char *))
 {
-	if (name[0] == '\0' || f == NULL)
+	if (f == NULL)
 		return;
 	f(name);
 }
