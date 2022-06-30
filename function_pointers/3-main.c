@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
+/**
+* main - main
+* @argc: int
+* @argv: char pointer
+* Return: int
+*/
 int main(int argc, char *argv[])
 {
 	int num1;
@@ -24,7 +31,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-
 	if ((num2 == 0) && (argv[2][0] == '/' || argv[2][0] == '%'))
 	{
 		printf("Error\n");
