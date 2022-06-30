@@ -36,7 +36,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	
 	res = (*f)(num1, num2);
 	printf("%d\n", res);
 	return (0);
