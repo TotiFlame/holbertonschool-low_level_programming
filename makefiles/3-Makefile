@@ -11,7 +11,7 @@ clean:
 oclean:
 	$(RM) -f $(OBJ)
 fclean:
-	$(RM) -f *~ $(NAME)
-	$(RM) -f *.swp $(NAME)
+	$(RM) -f $(OBJ) *.swp *~ $(NAME)
 re:
+	$(RM) -f $(OBJ)
 	make -f 3-Makefile
