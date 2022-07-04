@@ -1,0 +1,16 @@
+CC = gcc
+SRC = school.c main.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm
+
+all:  $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM) -f *~ $(NAME)
+oclean:
+	$(RM) -f $(OBJ)
+fclean:
+	$(RM) -f *~ *.spw $(NAME)
+re:
+	make -f 3-Makefile
