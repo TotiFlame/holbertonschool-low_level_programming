@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* add_nodeint - add a node at the
+* add_nodeint_end - add a node at the
 * end of a listint_t
 * @head: pointer to pointer head
 * @n: const int
