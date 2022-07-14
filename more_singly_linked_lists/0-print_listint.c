@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
-* print_listint - print list
+* print_listint - print int list
 * @h: listint_t pointer
 * Return: count
 */
