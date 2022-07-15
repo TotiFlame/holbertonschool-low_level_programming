@@ -1,10 +1,9 @@
 #include "lists.h"
 /**
-*
-*
-*
-*
-*
+* delete_nodeint_at_index - delete node
+* @head: pointer to pointer head
+* @index: index
+* Return: int
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -36,6 +35,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		free(del);
 		tmp->next = NULL;
-	}	
+	}
 	return (1);
 }
