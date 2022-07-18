@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_binary - binary to decimal
-* @n: unsigned long int 
+* @n: unsigned long int
 */
 void print_binary(unsigned long int n)
 {
