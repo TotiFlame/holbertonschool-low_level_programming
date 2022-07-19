@@ -20,5 +20,5 @@ int get_bit(unsigned long int n, unsigned int index)
 		n >>= 1;
 		i++;
 	}
-	return(bit[index]);
+	return(bin[index]);
 }
