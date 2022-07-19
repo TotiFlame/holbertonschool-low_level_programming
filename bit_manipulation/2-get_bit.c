@@ -13,6 +13,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	int i = 0;
 	int bit = 0;
 
+	if (index > 64)
+		return (-1);
 	while (n)
 	{
 		bit = (n & 1);
@@ -20,5 +22,5 @@ int get_bit(unsigned long int n, unsigned int index)
 		n >>= 1;
 		i++;
 	}
-	return(bin[index]);
+	return (bin[index]);
 }
