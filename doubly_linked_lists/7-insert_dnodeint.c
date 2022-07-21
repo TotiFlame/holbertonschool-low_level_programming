@@ -17,13 +17,20 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (!newnode)
 		return (NULL);
 	newnode->n = n;
-	if (idx == 0)
+	if (!(*h)) /* if is an empty list */
+	{
+		newnode->next = NULL;
+		newnode->prev = NULL;
+		*h = newnode;
+		return (newnode);
+	}
+	if (idx == 0) /*if idx is the head */
 	{
 		newnode->prev = NULL;
 		(*h)->prev = newnode;
 		newnode->next = *h;
 		*h = newnode;
-
+		return (newnode);
 	}
 	else
 	{
