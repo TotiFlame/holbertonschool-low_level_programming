@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* print_dlistint - 
+* print_dlistint - print double list int
 * @h: dlistint pointer
 * Return: count
 */
