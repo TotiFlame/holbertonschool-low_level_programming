@@ -17,39 +17,23 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (!newnode)
 		return (NULL);
 	newnode->n = n;
-	if (!(*h)) /* if is an empty list */
+	if (!(*h) || idx == 0)
+		return (add_dnodeint(*h, n));
+	while (ant && i != (idx - 1))
 	{
-		newnode->next = NULL;
-		newnode->prev = NULL;
-		*h = newnode;
-		return (newnode);
+		if (!ant->next)
+			return (NULL);
+		ant = ant->next;
+		i++;
 	}
-	if (idx == 0) /*if idx is the head */
+	while (sig && r != idx)
 	{
-		newnode->prev = NULL;
-		(*h)->prev = newnode;
-		newnode->next = *h;
-		*h = newnode;
-		return (newnode);
+		sig = sig->next;
+		r++;
 	}
-	else
-	{
-		while (ant && i != (idx - 1))
-		{
-			if (!ant->next)
-				return (NULL);
-			ant = ant->next;
-			i++;
-		}
-		while (sig && r != idx)
-		{
-			sig = sig->next;
-			r++;
-		}
-		newnode->prev = ant;
-		newnode->next = sig;
-		ant->next = newnode;
-		sig->prev = newnode;
-	}
+	newnode->prev = ant;
+	newnode->next = sig;
+	ant->next = newnode;
+	sig->prev = newnode;
 	return (newnode);
 }
