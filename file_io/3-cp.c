@@ -40,12 +40,12 @@ int main(int argc, char *argv[])
 	}
 	if (close(file_from) == -1)
 	{
-		dprintf("Error: Can't close fd %d\n", file_from);
+		dprintf(2, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
 	if (close(file_to) == -1)
 	{
-		dprintf("Error: Can't close fd %d\n", file_to);
+		dprintf(2, "Error: Can't close fd %d\n", file_to);
         exit(100);
 	}
 	return (0);
