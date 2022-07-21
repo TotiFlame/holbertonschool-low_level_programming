@@ -5,7 +5,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+* main - copies a file
+* @argc: amount of arguments
+* @argv: arguments
+* Return: int
+*/
 int main(int argc, char *argv[])
 {
 	int lenght, file_from, file_to;
@@ -19,14 +24,14 @@ int main(int argc, char *argv[])
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	lenght = read(file_from, bread, 1024);
 	while (lenght)
 	{
-		if(write(file_to, bread, lenght) != lenght)
+		if (write(file_to, bread, lenght) != lenght)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
